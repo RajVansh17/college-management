@@ -1,0 +1,19 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply transition-colors duration-500;
+  }
+  body {
+    @apply font-sans antialiased bg-gradient-to-br from-slate-50 via-white to-cyan-50/30 dark:from-slate-950 dark:via-slate-900 dark:to-purple-950/30 min-h-screen text-slate-800 dark:text-slate-200;
+  }
+}
+
+/* 8px grid - use p-2, p-4, p-6 etc (8, 16, 24px) */
